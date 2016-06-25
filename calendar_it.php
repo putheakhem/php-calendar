@@ -99,7 +99,7 @@
       $thisMonth = str_ireplace($english, $italian, $getMonth);
       return '<div class="calendar_header">' . "\r\n" . '<a class="calendar_prev" href="' . $this->naviHref . '?month=' . sprintf('%02d', $preMonth) . '&amp;year=' . $preYear.'">Precedente</a>' . "\r\n" . '<span class="calendar_title">' . $thisMonth . '</span>' . "\r\n" . '<a class="calendar_next" href="' . $this->naviHref . '?month=' . sprintf("%02d", $nextMonth) . '&amp;year=' . $nextYear . '">Prossimo</a>' . "\r\n"  . '</div>';
     }
-    
+
     /**
     ** create calendar week labels
     **/
@@ -141,4 +141,3 @@
   }
   $calendar = new Calendar();
   echo $calendar->show();
-?>
